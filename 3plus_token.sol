@@ -6,8 +6,6 @@
 ╚═════╝ ╚═╝     ╚══════╝ ╚═════╝ ╚══════╝
 // 3plus Token (3PLUS) //
 // 3Plus Token (3PLUS) is modified fork of Reflect, Reflector and BoostX.
-// IERC20, SafeMath, Context, Ownable and Address are copied from OpenZeppelin Repo.
-// Smart contract is static security audited by Fortress Foundation.
 // License: MIT
 
 pragma solidity >=0.6.0 <0.8.0;
