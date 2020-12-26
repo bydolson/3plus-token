@@ -21,7 +21,7 @@ import "openzeppelin-solidity/contracts/access/Ownable.sol";
 contract THREEPLUS is Context, Ownable, IERC20  {
     using Address for address;
     using SafeMath for uint256;
-    bytes32 public constant MINTER_ROLE = keccak256("MINTER_ROLE");
+
 
     mapping (address => uint256) private _rOwned;
     mapping (address => uint256) private _tOwned;
@@ -39,6 +39,8 @@ contract THREEPLUS is Context, Ownable, IERC20  {
     string private _name = '3Plus';
     string private _symbol = '3PLUS';
     uint8 private _decimals = 9;
+
+    bytes32 public constant MINTER_ROLE = keccak256("MINTER_ROLE");
 
     constructor () public {
         _setupRole(MINTER_ROLE, _msgSender());
